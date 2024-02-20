@@ -1,0 +1,275 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    text-align: center;
+    margin:0px 0px 0px 0px;
+}
+
+.header{
+    text-align: center;
+    background-color: rgba(1, 58, 103, 1);
+    top: 0;
+    width: 100%;
+    color:white;
+    font-size: 50px;
+}
+
+.nostyle{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    font-size: 50px;
+    background-color: rgba(1, 58, 103, 1);
+}
+
+.bar{
+    text-align: center;
+    background-color: rgba(1, 58, 103, 1);
+    margin: 0px 0px 0px 0px;
+    border: none;
+    top: 0;
+    width: 100%;
+    color:white;
+    font-size: 50px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.menu{
+    text-align: left;
+    margin: 0px 3px 3px 15px;
+    background-color: rgba(1, 58, 103, 1);
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: rgba(0, 176, 166, 1);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+    animation:fading 1s;
+}
+
+.intro{
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 176, 166, 1);
+    width: 910px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation:fading 4s;
+} 
+
+.button{
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.greenbutton{
+    background-color: rgba(0, 176, 166, 1);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.greenbutton:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@keyframes fading{
+	from{opacity:0.0;}
+	to{opacity:1.0;}
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+th{
+    background-color: rgba(0, 176, 166, 1);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    color: white;
+    animation:fading 1s;
+}
+
+td{
+    animation:fading 4s;
+}
+
+td:nth-child(odd){
+    background-color: rgba(0, 176, 166, 0.1);
+    animation:fading 4s;
+}
+
+td:nth-child(1){
+    background-color: rgba(0, 176, 166, 0.2);
+    animation:fading 4s;
+}
+
+
+tbody tr:hover{
+    background-color: rgba(0, 176, 166, 1);
+    color: white;
+    opacity: 0.65;
+    transition: 0.2s;
+}
+
+.insert{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    border-radius: 5px;
+}
+
+.insertdown{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 0;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.update{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    border-radius: 5px;
+}
+
+.updatedown{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 0;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    border-radius: 5px;
+}
+
+.deletedown{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 0;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popupcontent{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 204, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+  padding-bottom: 400px;
+  text-align: left;  
+}
+
+.sidenav a {
+  padding: 10px 20px 80px 35px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 500px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
